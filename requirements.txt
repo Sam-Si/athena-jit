@@ -1,0 +1,64 @@
+# Core JIT & Math
+llvmlite>=0.44.0  # Support for Python 3.13 (LLVM 15/16/17/18/19)
+numpy>=2.0.0      # For the vmap/array comparisons
+psutil            # To measure memory overhead
+
+# Scientific Computing & Data Science (Anaconda-like base)
+scipy             # Fundamental algorithms for scientific computing
+sympy             # Symbolic mathematics
+statsmodels       # Statistical modeling and testing
+pandas            # For structured benchmark data
+numexpr           # Fast numerical array expression evaluator
+bottleneck        # Fast NumPy array functions written in C
+
+# Machine Learning & AI
+scikit-learn      # Machine learning in Python
+jax[cpu]          # For the "Compare JAX" demos
+numba>=0.61.0     # Support for Python 3.13
+cython            # C-Extensions for Python
+
+# Visualization & Plotting
+matplotlib        # For generating "Speed Graphs"
+seaborn           # Statistical data visualization
+bokeh             # Interactive visualizations
+plotly            # Interactive graphing library
+
+# Graph & Data Structures
+networkx          # Network analysis and graph algorithms
+h5py              # Read and write HDF5 files
+
+# Distributed Computing
+dask              # Parallel computing with task scheduling
+
+# Development & Notebooks
+jupyter           # Jupyter metapackage
+ipython           # Interactive computing
+notebook          # Jupyter Notebook
+
+# Visualization & UX
+rich              # For beautiful IR dumps and execution plans
+graphviz          # For visualizing Trace/AST graphs
+pydot             # Interface for Graphviz
+tqdm              # For progress bars in long benchmarks
+
+# Testing & Profiling
+pytest            # For automated verification
+pytest-benchmark  # For precise performance regression testing
+memory_profiler   # For tracking "Operator Fusion" memory savings
+line_profiler     # For deep-dive performance analysis
+
+# General Utilities & Data Handling
+requests          # HTTP library
+pyyaml            # YAML parser and emitter
+sqlalchemy        # SQL toolkit and Object-Relational Mapping
+beautifulsoup4    # Screen-scraping library
+lxml              # XML and HTML processing
+cryptography      # Cryptographic recipes and primitives
+jinja2            # Templating engine
+pillow            # Python Imaging Library
+openpyxl          # Read/write Excel 2010 xlsx/xlsm files
+
+# Code Quality & Formatting
+black             # The uncompromising code formatter
+ruff              # An extremely fast Python linter and code formatter
+mypy              # Optional static typing for Python
