@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "athena-jit"
+version = "0.1.0"
+description = "Athena-JIT: A JAX-inspired JIT compiler using Python for tracing and LLVM for machine code"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "llvmlite>=0.44.0",
+    "numpy>=2.0.0",
+    "pytest>=7.0.0",
+    "pytest-benchmark>=4.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["athena*"]
+
+[tool.pytest.ini_options]
+# This makes pytest work without PYTHONPATH - just cd into the directory and run pytest!
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::PendingDeprecationWarning",
+]
